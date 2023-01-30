@@ -194,6 +194,7 @@
 // console.log(coffeeShop.foodOrdered())
 // // logs: Your food order is: Toast - £2, Scone - £3.5. The price of your order is £5.5.
 
+// Nested Array method
 
 let myOrder= ["Latte", "Espresso", "Toast", "Scone"]
 
