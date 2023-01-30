@@ -149,47 +149,87 @@
 // }
 // console.log(myPet.eat())
 
-// Activity 5
+// Activity 5 !!! Update
 // Create an object called coffee shop with key values of branch, drinks with prices and food with prices.
 // Add methods called drinksOrdered and foodOrdered.
 // They should return a string saying [Your order] is … with all items chosen with costs, and the total cost.
 
+// let myOrder= ["Latte", "Espresso", "Toast", "Scone"]
+
+// const coffeeShop = {
+//     branch: "Townsville",
+//     drinks: ["Latte", "Americano", "Espresso", "Mocha"],
+//     drinksPrices: [3.50, 3, 2.50, 4],
+//     food: ["Toast", "Croissant", "Scone", "Bacon roll"],
+//     foodPrices: [2, 2.50, 3.50, 4],
+//     drinksOrdered () {
+//         let currentOrder= []
+//         let currentOrderPrice= 0
+//         for (let i=0; i<myOrder.length; i++) {
+//             for (let j=0; j<this.drinks.length; j++) {
+//                 if (myOrder[i] === this.drinks[j]) {
+//                     currentOrder.push(` ${this.drinks[j]} - £${this.drinksPrices[j]}`);
+//                     currentOrderPrice += this.drinksPrices[j]
+//                 }
+//             }
+//         }
+//         return `Your drinks order is:${currentOrder}. The price of your order is £${currentOrderPrice}.`
+//     },
+//     foodOrdered () {
+//         let currentOrder= []
+//         let currentOrderPrice= 0
+//         for (let i=0; i<myOrder.length; i++) {
+//             for (let k=0; k<this.food.length; k++) {
+//                 if (myOrder[i] === this.food[k]) {
+//                     currentOrder.push(` ${this.food[k]} - £${this.foodPrices[k]}`);
+//                     currentOrderPrice += this.foodPrices[k]
+//                 }
+//             }
+//         }
+//         return `Your food order is:${currentOrder}. The price of your order is £${currentOrderPrice}.`
+//     }
+// }
+// console.log(coffeeShop.drinksOrdered())
+// // logs: Your drinks order is: Latte - £3.5, Espresso - £2.5. The price of your order is £6.
+// console.log(coffeeShop.foodOrdered())
+// // logs: Your food order is: Toast - £2, Scone - £3.5. The price of your order is £5.5.
+
+
 let myOrder= ["Latte", "Espresso", "Toast", "Scone"]
 
+// console.log(`${drinks[0][0]} are £`${drinks[0][1]})
 const coffeeShop = {
     branch: "Townsville",
-    drinks: ["Latte", "Americano", "Espresso", "Mocha"],
-    drinksPrices: [3.50, 3, 2.50, 4],
-    food: ["Toast", "Croissant", "Scone", "Bacon roll"],
-    foodPrices: [2, 2.50, 3.50, 4],
+    drinks:[ ["Latte", 3.50], ["Americano", 3], ["Espresso", 2.50], ["Mocha", 4] ],
+    food: [ ["Toast", 2], ["Croissant", 2.50], ["Scone", 3.50], ["Bacon roll", 4] ],
     drinksOrdered () {
         let currentOrder= []
         let currentOrderPrice= 0
         for (let i=0; i<myOrder.length; i++) {
             for (let j=0; j<this.drinks.length; j++) {
-                if (myOrder[i] === this.drinks[j]) {
-                    currentOrder.push(` ${this.drinks[j]} - £${this.drinksPrices[j]}`);
-                    currentOrderPrice += this.drinksPrices[j]
+                if (myOrder[i] === this.drinks[j][0]) {
+                    currentOrder.push(` ${this.drinks[j][0]} - £${this.drinks[j][1]}`);
+                    currentOrderPrice += this.drinks[j][1]
                 }
             }
         }
-        return `Your drinks order is:${currentOrder}. The price of your order is £${currentOrderPrice}.`
+        return `Your drinks order is:${currentOrder}. The total price of your order is £${currentOrderPrice}.`
     },
     foodOrdered () {
         let currentOrder= []
         let currentOrderPrice= 0
         for (let i=0; i<myOrder.length; i++) {
             for (let k=0; k<this.food.length; k++) {
-                if (myOrder[i] === this.food[k]) {
-                    currentOrder.push(` ${this.food[k]} - £${this.foodPrices[k]}`);
-                    currentOrderPrice += this.foodPrices[k]
+                if (myOrder[i] === this.food[k][0]) {
+                    currentOrder.push(` ${this.food[k][0]} - £${this.food[k][1]}`);
+                    currentOrderPrice += this.food[k][1]
                 }
             }
         }
-        return `Your food order is:${currentOrder}. The price of your order is £${currentOrderPrice}.`
+        return `Your food order is:${currentOrder}. The total price of your order is £${currentOrderPrice}.`
     }
 }
 console.log(coffeeShop.drinksOrdered())
-// logs: Your drinks order is: Latte - £3.5, Espresso - £2.5. The price of your order is £6.
+// logs: Your drinks order is: Latte - £3.5, Espresso - £2.5. The total price of your order is £6.
 console.log(coffeeShop.foodOrdered())
-// logs: Your food order is: Toast - £2, Scone - £3.5. The price of your order is £5.5.
+// logs: Your food order is: Toast - £2, Scone - £3.5. The total price of your order is £5.5.
