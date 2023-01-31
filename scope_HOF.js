@@ -99,29 +99,43 @@
 
 // HOF Higher Order Functions
 
-const whichGreeting = (timeOfDay) => {
-    console.log(`Good ${timeOfDay}`);
+// const whichGreeting = (timeOfDay) => {
+//     console.log(`Good ${timeOfDay}`);
+// }
+// const greet = (time, fn) => {
+//     if(time < 1200){
+//         fn("Morning");
+//     }else if (time >= 1200 && time < 1800){
+//         fn("Afternoon");
+//     }else{
+//         fn("Evening");
+//     }
+// }
+// greet(1400, whichGreeting);
+
+// Activity 1 !!!
+// Write a simple function which logs “Hello Code Nation” to the console. Then write a higher order function which will run our simple function five times, even though you only call it one time. Hint: Pass the simple function as a parameter, and this will involve a for loop.
+
+// const sayHello=()=>{
+//         console.log("Hi, how are you?")
+//     }
+
+const greetCN = function () {
+    console.log("Hello Code Nation");
 }
-const greet = (time, fn) => {
-    if(time < 1200){
-        fn("Morning");
-    }else if (time >= 1200 && time < 1800){
-        fn("Afternoon");
-    }else{
-        fn("Evening");
+
+const greetTimes = (fn, number) => {
+    for (let i=0; i<number; i++) {
+        return (fn);
+
     }
 }
-greet(1400, whichGreeting);
-
-// Activity 1
-// Write a simple function which logs “Hello Code Nation” to the console.
-// Then write a higher order function which will run our simple function five times,
-// even though you only call it one time.
-// Hint: Pass the simple function as a parameter, and this will involve a for loop.
+greetTimes(greetCN, 5)
 
 // Activity 2
-// The array method .map is an example of a higher order function.
-// Declare a variable with five numbers, then use .map to iterate through the array
-// and multiply each array item by 3.
+// The array method .map is an example of a higher order function. Declare a variable with five numbers, then use .map to iterate through the array and multiply each array item by 3.
+// e.g. let map1=favouriteFilms.map(x => x+1)
 
-// let map1=favouriteFilms.map(x => x+1)
+// let numList = [1, 2, 3, 4 , 5]
+// let mapX3=numList.map(x => x*3)
+// console.log(mapX3)
