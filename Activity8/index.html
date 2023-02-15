@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="container1">
+        <div id="container2">
+            <div id="menuHolder">
+                <img id="coffeeMenu" src="./images/menu.png" alt="a menu showing coffee prices">
+            </div>
+            <div id="drinksButtonsAndTotal">
+
+                <div id="drinksAndButtons">
+
+                    <div id="drinks">
+                        <div class="DrinksList">
+                            <p id="espresso">Espresso £2.70</p>
+                        </div>
+                        <div class="DrinksList">
+                            <p id="macchiato">Macchiato £3.40</p>
+                        </div>
+                        <div class="DrinksList">
+                            <p id="latte">Latte £3.30</p>
+                        </div>
+                        <div class="DrinksList">
+                            <p id="flatWhite">Flat White £3.20</p>
+                        </div>
+                        <div class="DrinksList">
+                            <p id="cappuccino">Cappuccino £3.60</p>
+                        </div>
+                        <div class="DrinksList">
+                            <p id="mocha">Mocha £3.90</p>
+                        </div>
+                    </div>
+
+                    <div id="plusButtons">
+                        <div class="PlusList">
+                            <button id="espressoPlus">+</button>
+                        </div>
+                        <div class="PlusList">
+                            <button id="macchiatoPlus">+</button>
+                        </div>
+                        <div class="PlusList">
+                            <button id="lattePlus">+</button>
+                        </div>
+                        <div class="PlusList">
+                            <button id="flatWhitePlus">+</button>
+                        </div>
+                        <div class="PlusList">
+                            <button id="cappuccinoPlus">+</button>
+                        </div>
+                        <div class="PlusList">
+                            <button id="mochaPlus">+</button>
+                        </div>
+                    </div>
+
+                    <div id="minusButtons">
+                        <div class="MinusList">
+                            <button id="espressoMinus">-</button>
+                        </div>
+                        <div class="MinusList">
+                            <button id="macchiatoMinus">-</button>
+                        </div>
+                        <div class="MinusList">
+                            <button id="latteMinus">-</button>
+                        </div>
+                        <div class="MinusList">
+                            <button id="flatWhiteMinus">-</button>
+                        </div>
+                        <div class="MinusList">
+                            <button id="cappuccinoMinus">-</button>
+                        </div>
+                        <div class="MinusList">
+                            <button id="mochaMinus">-</button>
+                        </div>
+                    </div>
+
+                    <div id="quantities">
+                        <div class="QuantsList">
+                            <p id="espressoQuant">quantity</p>
+                        </div>
+                        <div class="QuantsList">
+                            <p id="macchiatoQuant">quantity</p>
+                        </div>
+                        <div class="QuantsList">
+                            <p id="latteQuant">quantity</p>
+                        </div>
+                        <div class="QuantsList">
+                            <p id="flatWhiteQuant">quantity</p>
+                        </div>
+                        <div class="QuantsList">
+                            <p id="cappuccinoQuant">quantity</p>
+                        </div>
+                        <div class="QuantsList">
+                            <p id="mochaQuant">quantity</p>
+                        </div>
+                    </div>
+                    
+                    <div id="subtotals">
+                        <div class="SubTList">
+                            <p id="espressoSubT">subtotal</p>
+                        </div>
+                        <div class="SubTList">
+                            <p id="macchiatoSubT">subtotal</p>
+                        </div>
+                        <div class="SubTList">
+                            <p id="latteSubT">subtotal</p>
+                        </div>
+                        <div class="SubTList">
+                            <p id="flatWhiteSubT">subtotal</p>
+                        </div>
+                        <div class="SubTList">
+                            <p id="cappuccinoSubT">subtotal</p>
+                        </div>
+                        <div class="SubTList">
+                            <p id="mochaSubT">subtotal</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div id="totalButtonDiv">
+                    <button id="totalButton">Total</button>
+                </div>
+
+            </div>
+        </div>
+        <div id="totalDisplayDiv">
+            <!-- <p id="orderPrint"> </p> -->
+            <p id="totalDisplay">The total price of your order is £#</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
